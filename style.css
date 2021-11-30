@@ -1044,6 +1044,11 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 
 /* line 32, sass/layout/_content.scss */
 .text-right { text-align: right; }
+/* line 32, Ditha is resizing the logo */
+.logo{
+width: 70px;
+height:80px;
+}
 
 /* line 35, sass/layout/_content.scss */
 .hero img { display: block; max-width: 100%; }
