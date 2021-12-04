@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>The Adasi Project | Volunteer</title>
+		
+		<!-- Loading third party fonts -->
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" >
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div id="site-content">
+			
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="images/logo.png" alt="Company Name" class="logo">
+						<div class="branding-copy">
+							<h1 class="site-title">The Adasi Project</h1>
+							<small class="site-description">For women, by women. Let's take action!</small>
+						</div>
+					</a>
+
+					<nav class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About Us</a><ul>
+								<li><a href="service.html"> What we do</a></li>
+								<li><a href="team.html">Our Team</a></li>
+							</ul></li>
+							<li class="menu-item current-menu-item"><a href="volunteer.html">Volunteer</a></li>
+							<!--<li class="menu-item"><a href="service.html">Service</a></li>-->
+							<li class="menu-item"><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+					<nav class="mobile-navigation"></nav>
+				</div>
+			</header> <!-- .site-header -->
+
+			<main class="main-content">
+				
+				<div class="fullwidth-block content">
+					<div class="container">
+						<h2 class="entry-title">Would you like to help vulnerable women?</h2>
+						<p>As a non-profit organization, we depend on the goodwill of volunteers. By volunteering, you are joining the campaign to secure a safer world for our women and girls. Fill our volunteer form with accurate information and we will be in touch!</p>
+
+						<!--<div class="timeline">
+							<div class="milestone">
+								<h3 class="year">1998</h3>
+								<h2 class="milestone-title">Phasellus luctus rhoncus</h2>
+								<p>Consequuntur rerum cumque temporibus vitae facilis odio explicabo ullam pariatur deserunt esse a quas, quos reprehenderit non mollitia</p>
+							</div>
+							<div class="milestone">
+								<h3 class="year">2004</h3>
+								<h2 class="milestone-title">iaculis in augue venenati</h2>
+								<p>Velit illum enim id deserunt veritatis ipsa fugit, voluptatibus tempore alias maxime cumque necessitatibus ullam.</p>
+							</div>
+							<div class="milestone">
+								<h3 class="year">2009</h3>
+								<h2 class="milestone-title">Cras tellus lorem rutrum</h2>
+								<p>Quia harum doloremque aliquid labore delectus fugiat aspernatur esse placeat cum veniam velit corporis quam voluptatem</p>
+							</div>
+							<div class="milestone">
+								<h3 class="year">2014</h3>
+								<h2 class="milestone-title">Vestibulum in eleifend ligula</h2>
+								<p>elit. Corporis ratione animi, ipsa quam deleniti voluptatibus ipsum illo natus, provident soluta impedit</p>
+							</div>	
+						</div>--->
+						<!--<div class="col-md-5 col-md-offset-1">
+							<form action="#" class="contact-form">
+								<input type="text" id="name" placeholder="Name...">
+								<input type="text" id="email" placeholder="Email...">
+								<input type="text" id="phone" placeholder="phone number...">
+								<textarea name="" id="Occupation" placeholder="Occupation..."></textarea>
+								<textarea name="" id="message" placeholder="Message..."></textarea>
+								<div class="text-right">
+									<a href="mailto:enquires@tech4deev.com" class="button">submit</a>
+								</div>
+							</form>
+						</div>-->
+						<form method="post" action="//submit.form" onSubmit="return validateForm();">
+							<div style="max-width: 400px;">
+							</div>
+							<div style="padding-bottom: 18px;font-size : 24px;">Volunteer Registration</div>
+							<div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+							<div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<span style="color: red;"> *</span><br/>
+							<input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+							</div>
+							<div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<span style="color: red;"> *</span><br/>
+							<input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+							</div>
+							</div><div style="padding-bottom: 18px;">Email<br/>
+							<input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/>
+							</div>
+							<div style="padding-bottom: 18px;">Phone<br/>
+							<input type="text" id="data_5" name="data_5" style="max-width : 250px;" class="form-control"/>
+							</div>
+							<div style="padding-bottom: 18px;">Occupation<br/>
+							<input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
+							</div>
+							<div style="padding-bottom: 18px;">Location<br/>
+								<input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
+								</div>
+							<div style="padding-bottom: 18px;">What can you help with?<br/>
+							<span><input type="checkbox" id="data_7_0" name="data_7" value="Delivering flyers"/> Counseling </span><br/>
+							<span><input type="checkbox" id="data_7_1" name="data_7" value="Taking phone calls"/> Legal work</span><br/>
+							<span><input type="checkbox" id="data_7_2" name="data_7" value="Entering data"/> Outreach Programmes</span><br/>
+							<span><input type="checkbox" id="data_7_3" name="data_7" value="Public relations"/> Public relations</span><br/>
+							<span><input type="checkbox" id="data_7_4" name="data_7" value="Door-to-door"/> Door-to-door</span><br/>
+							<span><input type="checkbox" id="data_7_5" name="data_7" value="Clerical work"/> Clerical work</span><br/>
+							</div>
+							<div style="padding-bottom: 18px;">Why do you want to join the Adasi Project?<br/>
+							<textarea id="data_8" false name="data_8" style="max-width : 450px;" rows="6" class="form-control"></textarea>
+							</div>
+							<div style="padding-bottom: 18px;"><br/>
+							<!--<span><input type="checkbox" id="data_9_0" name="data_9" value="Sign me up to supporter email list"/> Sign me up to supporter email list</span><br/>-->
+							</div>
+							<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+							<div>
+						<div style="float:right"><a href="tevh4dev.com" id="lnk100" title="form to email">form to email</a></div>
+							<!--<script src="https://www.100forms.com/js/FORMKEY:9SUFQJN789CA/SEND:my@email.com" type="text/javascript"></script>-->
+							</div>
+							</form>
+							
+							<script type="text/javascript">
+							function validateForm() {
+							if (isEmpty(document.getElementById('data_2').value.trim())) {
+							alert('First name is required!');
+							return false;
+							}
+							if (isEmpty(document.getElementById('data_3').value.trim())) {
+							alert('Last name is required!');
+							return false;
+							}
+							if (!validateEmail(document.getElementById('data_4').value.trim())) {
+							alert('Email must be a valid email address!');
+							return false;
+							}
+							return true;
+							}
+							function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+							function validateEmail(email) {
+							var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+							return isEmpty(email) || re.test(email);
+							}
+							</script>
+
+						<div class="counter">
+							<span>Over</span>
+							<div class="num">200</div>
+							<div class="copy">
+								<span>Women helped</span>
+								<span>In our whole career</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</main> <!-- .main-content -->
+
+			<!--<footer class="site-footer">
+				<div class="container">
+					<div class="subscribe-form">
+						<form action="#">
+							<label for="#">
+								<span>Do you want to get news?</span>
+								<span>Join our news letter</span>
+							</label>
+							<div class="control">
+								<input type="text" placeholder="Enter your email to subscribe...">
+								<button type="submit"><img src="images/icon-envelope.png" alt=""></button>
+														</form>
+							</div>-->
+						</div>
+						<div class="social-links">
+							<a href="https://www.facebook.com/Tech4DevHQ/"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.twitter.com/tech4devhq"><i class="fa fa-twitter"></i></a>
+							<!---<a href="#"><i class="fa fa-google-plus"></i></a>-->
+							<a href="https://www.instagram.com/tech4dev/"><i class="fa fa-instagram"></i></a>
+						</div>
+						<div class="copy">
+							<p>Copyright 2021 The Adasi Project. Designed by Iroro Eru. All rights reserved.</p>
+						</div>
+				</div>
+			</footer> <!-- .site-footer -->
+
+		</div> <!-- #site-content -->
+
+		
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
